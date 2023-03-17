@@ -1,87 +1,109 @@
-/*
-console.log(); -> mostrar no terminal
-var
-let
-const
-
-"" `` '' --> string
-
-if (condicao) {
-    "faz tal coisa se a condição for verdade, se for mentira vai pro else" 
-} else {
-    "faz tal coisa"
-}
-
-*/
-
-//Calcule a média de duas notas, se a média for maior ou igual a 7 mostre que ele está aprovado, se for menor reprovado;
-
-// let n1 = 6
-// let n2 = 8
-// let media = (n1+n2)/2
-
-// if (media >= 7) {
-    //     console.log("aluno aprovado")
-    // } else {
-        //  console.log("aluno reprovado")
-        // }
-        
-        // let n1 = 2
-        // for (let i = 0; i <= 10; i++) {
-            //     console.log(i)
+// async function fetchUser(username){
+//     const response = await fetch('https;//api.github.com')
+// const data = await response.json()
+// console.log(data)
+// return data;
 // }
-
-// let tabuada = 5
-// for (let i= 0; i <=10; i++){
-//     console.log(`${tabuada} x ${i}= ${tabuada*i}`)
+// fetchUser('')
+//      SWITCH CASE
+// let nome= "pedro"
+// console.log(`seu nome é ${nome}`)
+// IF ELSE
+// let E = 3
+// let A = 9
+// if (20<=9){
+//     console.log("20 é menor que 9")
 // }
-
-// let tabuada = 8
-// for (let i=0; i <=10; i++){
-    //     console.log(`${tabuada} + ${i}= ${tabuada+i}`)
-    // }
-    
-    
-    // let nota = [12,8,18];
-    // let media = (nota[0]+nota[1]+nota[2])/nota.length
-    // console.log(`media é ${media}`)
-    
-// let A = 8
-// let B = 16
-// //
-// console.log("Antes",A,B);
-
-// let temp = A;
-// A = B;
-// B = temp
-// console.log("Depois",A,B);
-// let Salário = 1200
-// let aumento = Salário *(25/100)
-// console.log("novo salario", Salário + aumento)
+// else
+// {
+//     console.log ("20 não é menor que 9")
+// }
 // let nascimento= 2003
-// let atual = 2023
-// console.log('idade atual =', atual-nascimento)
-// console.log('idade em 2010 =',2010- nascimento)
-// let nascimento = 1980
-// let atual = 2023
-// console.log('idade em anos =', atual-nascimento)
-// console.log("idade em meses=", 12* (atual-nascimento))
-// console.log('idade em dias=' ,365* (atual-nascimento))
-// console.log( 'idade da pessoa em semanas=', 52* (atual-nascimento))
-// let peso = 70
-// let altura = 1.80
-// let calculo = peso / (altura*altura)
-// console.log("IMC =", calculo)
-// let grauC= 28
-// console.log("temperatura em Fahrenheit =", grauC*1.8+32)
-// let pedro= 80
-// console.log('o peso de pedro em gramas é = ', pedro*(100))
-// let min= 350
-// let convert = min/60
-// console.log('350min em horas é =', convert)
-let nome = "angela"
-let idade = 20
-let dias = idade*365
-console.log(nome,', VOCÊ JÁ VIVEU', dias, "dias")
-console.log(`${nome}, voce já viveu ${dias} dias`)
-let
+// let requisito= 2005
+// if (nascimento < requisito){
+//     console.log("poderá votar este ano")
+// }
+// else 
+// {
+//     console.log("não poderá votar este ano")
+// }
+// let senha = 12345
+// if(senha -= 1234){
+//     console.log("ACESSO NEGADO")
+// }
+// else{
+//     console.log("ACESSO PERMITIDO")
+// }
+// let kg= 69
+// let altura= 1.80
+// let IMC =kg/ (altura * altura)
+// if (IMC<18.5){
+// console.log('magreza')
+// }
+// if (IMC >= 18.5 && IMC <= 24.9 ){
+//     console.log("normal")
+// }
+// if(IMC >=25.0 && IMC <=29.9){
+//     console.log("sobrepeso")
+// }
+// if (IMC >=30.0 && IMC <=39.9){
+//     console.log("obesidade")
+// }
+// if(IMC >40.0){
+//     console.log('obesidade grave')
+// }
+// AULA 13/03 CALL BACK
+// function exibirMensagem(arg) {  "exibir": Unknowm Word, 
+// console.log(`Resultado : " ${arg} "`); "Resultado": Unknowm Word
+// }
+// async function DadosApi(api,callback) {
+//     const resultados = await fetch(api); "resultados": Unknown Word
+//     const dados = await resultados.json(); "resultados": Unknown Word
+//     callback(dados.value);
+// }
+// DadosApo('https//api.chucknorris.io/jokes/randos', exibirMensagem)
+//    E S T R U T U R A   D E    R E P E T I Ç Ã O       
+// let num = 5; 
+//         console.log(num * 0) ;
+//         console.log(num * 1) ;
+//         console.log(num * 2) ;
+//         console.log(num * 3) ;
+//         console.log(num * 4) ;
+//         console.log(num * 5) ;
+//         console.log(num * 6) ;
+//         console.log(num * 7) ;
+//         console.log(num * 8) ;
+//         console.log(num * 9) ;
+//         console.log(num * 10) ;
+    // let contador = 0;
+    // while(contador < 10){
+    //     console.log(contador);
+    //     contador ++;
+    // }
+        
+// let contador = 0;
+// do {
+//     contador++;
+//     console.log(contador);
+// } while (contador <10);
+// for (let i =0; i <20; i++){
+//     console.log(i)
+// }
+// E X E R C I C I O
+// let tabuada = 10
+// for (let i= 0; i <=10; i++){
+// console.log(`${tabuada} x ${i}= ${tabuada*i}`)
+// }
+// function soma (n1, n2) {
+//     return new Promise ( (resolve, reject)=> {
+//         if (typeof n1 !== "number " || typeof n2 !== "number") {
+//             reject("Os valores informados devem ser numeros");  "valores"
+//         } else {
+//             const result = n1 + n2 ;
+//             resolve(result);
+//         }
+//     });
+// }
+// soma (2,3)
+// .then((result) => console.log(result))
+// .catch((error) => console.log(error));
